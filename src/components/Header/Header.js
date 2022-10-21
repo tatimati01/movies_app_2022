@@ -1,14 +1,25 @@
 import React from 'react';
+import {NavLink} from "react-router-dom";
 
-import {SearchForm} from "../SearchForm/SearchForm";
+import css from './Header.module.css'
+import {SearchForm} from '../SearchForm/SearchForm';
 import {UserInfo} from "../UserInfo/UserInfo";
 
 const Header = () => {
     return (
-        <div>
-            <div>Logo</div>
-            <SearchForm/>
-            <UserInfo/>
+        <div className={css.header}>
+            <div className={css.navbar}>
+                <NavLink to={'/'}>THE Movie APP</NavLink>
+                <NavLink to={'/movies'}>Movies</NavLink>
+                <NavLink to={'/genres'}>Genres</NavLink>
+            </div>
+            <div>
+                <SearchForm/>
+            </div>
+
+            <div>
+                <UserInfo/>
+            </div>
         </div>
     );
 };

@@ -1,11 +1,11 @@
 import React from 'react';
 
-import {Genres} from "../../components";
+import {GenresBar} from "../../components";
 
 const GenresPage = () => {
     return (
         <div>
-            <Genres/>
+            <GenresBar/>
         </div>
     );
 };

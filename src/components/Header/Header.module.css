@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 20px 100px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    color: lightblue;
+    margin: 10px;
+}
+
+.navbar a:hover {
+    color: mediumpurple;
+}
+
+.navbar a[class='active'] {
+    border-bottom: mediumpurple 2px solid;
+    color: mediumpurple;
+}
