@@ -6,14 +6,14 @@ function App() {
             <Routes>
                 <Route path={'/'} element={<Layout/>}>
                     <Route path={'/'} element={<HomePage/>}>
-                        <Route path={':genreName'} element={<MoviesOfGenre/>}/>
-                        <Route path={':movieId'} element={<MovieInfoPage/>}/>
+                        <Route path={':genreName'} element={}/>
+                        <Route path={':movieId'} element={<MovieCardPage/>}/>
                     </Route>
-                    <Route path={'movies'} element={<MoviesPage/>}>
-                        <Route path={':movieId'} element={<MovieInfoPage/>}/>
+                    <Route path={'movies'} element={<MoviesListPage/>}>
+                        <Route path={':movieId'} element={<MovieCardPage/>}/>
                     </Route>
                     <Route path={'genres'} element={<GenresPage/>}>
-                        <Route path={':genreName'} element={<MoviesOfGenre/>}>
+                        <Route path={':genreName'} element={}>
                             <Route path={':movieId'} element={<MovieInfoPage/>}/>
                         </Route>
                     </Route>
