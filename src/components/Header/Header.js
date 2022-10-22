@@ -6,6 +6,11 @@ import {SearchForm} from '../SearchForm/SearchForm';
 import {UserInfo} from "../UserInfo/UserInfo";
 
 const Header = () => {
+    // const themeSwitcher = (e) => {
+    //     e.preventDefault();
+    //
+    // }
+
     return (
         <div className={css.header}>
             <div className={css.navbar}>
@@ -13,6 +18,7 @@ const Header = () => {
                 <NavLink to={'/movies'}>Movies</NavLink>
                 <NavLink to={'/genres'}>Genres</NavLink>
             </div>
+
             <div>
                 <SearchForm/>
             </div>
@@ -20,6 +26,8 @@ const Header = () => {
             <div>
                 <UserInfo/>
             </div>
+
+            {/*<button onClick={themeSwitcher(e)}>Light / Dark</button>*/}
         </div>
     );
 };

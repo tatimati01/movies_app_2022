@@ -1,6 +1,6 @@
 const baseURL = 'https://api.themoviedb.org/3';
 
-const APIkey = '32020176f2103d274f021c8122cef22a';
+const api_key = '32020176f2103d274f021c8122cef22a';
 
 const imageURL = 'http://image.tmdb.org/t/p';
 
@@ -10,12 +10,12 @@ const urls = {
     movies: `/discover/movie`,
     movie: `/movie`,
     genres: `/genre/movie/list`,
-    search: `/search/movie`,
+    search: `/search`,
 };
 
 export {
     baseURL,
-    APIkey,
+    api_key,
     imageURL,
     language,
     urls

@@ -1,7 +1,7 @@
 import {axiosService} from "./axios.service";
-import {APIkey, urls} from "../configs";
+import {api_key, urls} from "../configs";
 
 export const genresService = {
-    getAllGenres: ()=> axiosService.get(`${urls.genres}?api_key=${APIkey}`),
-    getGenreByName: (genreName)=> axiosService.get(`${urls.genres}?api_key=${APIkey}&genre=${genreName}`)
+    getAllGenres: ()=> axiosService.get(`${urls.genres}?api_key=${api_key}`),
+    getGenreByName: (genreName)=> axiosService.get(`${urls.genres}?api_key=${api_key}&genre=${genreName}`)
 }
