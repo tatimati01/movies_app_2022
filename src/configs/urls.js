@@ -1,6 +1,6 @@
 const baseURL = 'https://api.themoviedb.org/3';
 
-const api_key = '32020176f2103d274f021c8122cef22a';
+// const api_key = '32020176f2103d274f021c8122cef22a';
 
 const imageURL = 'http://image.tmdb.org/t/p';
 
@@ -15,7 +15,7 @@ const urls = {
 
 export {
     baseURL,
-    api_key,
+    // api_key,
     imageURL,
     language,
     urls
