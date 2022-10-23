@@ -10,7 +10,7 @@ const urls = {
     movies: `/discover/movie`,
     movie: `/movie`,
     genres: `/genre/movie/list`,
-    search: `/search`,
+    search: `/search/keyword`,
 };
 
 export {

@@ -1,0 +1,70 @@
+.genresPageStyle {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.genresWrapper {
+    display: flex;
+    justify-content: center;
+    background: rgba(173, 216, 230, 0.1);
+    border-radius: 20px;
+}
+
+.genresBar {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    box-sizing: content-box;
+}
+
+.genreStyle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genreStyle button {
+    width: 100px;
+    height: 40px;
+    padding: 30px 60px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: rgba(173, 216, 230, 0.1) 5px 5px 5px;
+}
+
+.genreStyle a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.genreStyle a:hover {
+    color: mediumpurple;
+}
+
+.genreStyle a[class='active'] {
+    color: mediumpurple;
+}
+
+.genreInfo {
+    background: white;
+    margin: 5px;
+}
+
+.outlet {
+    margin: 20px;
+}
+
+.moviesOfGenreWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}

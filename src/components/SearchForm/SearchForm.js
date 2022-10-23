@@ -2,6 +2,7 @@ import React from 'react';
 import {useForm} from "react-hook-form";
 
 import css from './SearchForm.module.css'
+import {useNavigate, useSearchParams} from "react-router-dom";
 
 
 const SearchForm = () => {
@@ -12,8 +13,12 @@ const SearchForm = () => {
         }
     });
 
-    const searchSubmit = (title) => {
-        console.log(title);
+    const navigator = useNavigate();
+
+    const [query, setQuery] = useSearchParams();
+
+    const searchSubmit = (e) => {
+        setQuery({query: e.search})
         reset();
     }
 
@@ -22,7 +27,9 @@ const SearchForm = () => {
             <form onSubmit={handleSubmit(searchSubmit)}>
                 <input type="text" {...register('search', {require: {value: true, message: 'Error'}})}/>
                 {errors.name && <span>{errors.name.message}</span>}
-                <button>Search</button>
+                <button onClick={(e)=> {
+                    e.preventDefault()
+                    navigator(`/search`)}}>Search</button>
             </form>
         </div>
     );
