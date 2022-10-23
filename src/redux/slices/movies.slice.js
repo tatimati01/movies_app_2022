@@ -1,6 +1,8 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {moviesService} from "../../services";
+import {useNavigate, useSearchParams} from "react-router-dom";
+
 
 const initialState = {
     movies: [],
@@ -9,14 +11,14 @@ const initialState = {
     images: [],
     pageNumber: 1,
     loading: false,
-    errors: null
+    error: null
 }
 
 const getAllMovies = createAsyncThunk(
     'moviesSlice/getAllMovies',
-    async ({pageNumber}, {rejectWithValue}) => {
+    async (pageNumber, {rejectWithValue}) => {
         try {
-            const {data} = await moviesService.getAllMovies();
+            const {data} = await moviesService.getAllMovies(pageNumber);
             return data;
         } catch (e) {
             return rejectWithValue(e.response.data);
@@ -26,9 +28,9 @@ const getAllMovies = createAsyncThunk(
 
 const getMovieById = createAsyncThunk(
     'moviesSlice/getMovieById',
-    async ({id},{rejectWithValue}) => {
+    async ({movieId},{rejectWithValue}) => {
         try {
-            const {data} = await moviesService.getMovieById(id);
+            const {data} = await moviesService.getMovieById(movieId);
             return data;
 
         } catch (e) {
@@ -63,17 +65,19 @@ const moviesSlice = createSlice({
     extraReducers: builder =>
         builder
             .addCase(getAllMovies.fulfilled,(state, action) => {
-                state.movies = action.payload
+                state.movies = action.payload.results
                 state.loading = false
             })
             .addCase(getAllMovies.rejected, (state, action) => {
-                state.errors = action.payload
+                state.error = action.payload
                 state.loading = false
             })
             .addCase(getAllMovies.pending, (state, action) => {
                 state.loading = action.payload
             })
 });
+
+
 
 const {reducer: moviesReducer, actions: {goNextPage, goPrevPage}} = moviesSlice;
 
