@@ -1,7 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {moviesService} from "../../services";
-import {useNavigate, useSearchParams} from "react-router-dom";
 
 
 const initialState = {
@@ -28,7 +27,7 @@ const getAllMovies = createAsyncThunk(
 
 const getMovieById = createAsyncThunk(
     'moviesSlice/getMovieById',
-    async ({movieId},{rejectWithValue}) => {
+    async (movieId,{rejectWithValue}) => {
         try {
             const {data} = await moviesService.getMovieById(movieId);
             return data;
@@ -73,6 +72,17 @@ const moviesSlice = createSlice({
                 state.loading = false
             })
             .addCase(getAllMovies.pending, (state, action) => {
+                state.loading = action.payload
+            })
+            .addCase(getMovieById.fulfilled, (state, action) => {
+                state.currentMovie = action.payload
+                state.loading = false
+            })
+            .addCase(getMovieById.rejected, (state, action) => {
+                state.error = action.payload
+                state.loading = false
+            })
+            .addCase(getMovieById.pending, (state, action) => {
                 state.loading = action.payload
             })
 });

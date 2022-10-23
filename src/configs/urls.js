@@ -4,7 +4,7 @@ const baseURL = 'https://api.themoviedb.org/3';
 
 const imageURL = 'http://image.tmdb.org/t/p';
 
-const language = {iso_639_1: 'en'}
+// const language = {iso_639_1: 'en'}
 
 const urls = {
     movies: `/discover/movie`,
@@ -17,6 +17,6 @@ export {
     baseURL,
     // api_key,
     imageURL,
-    language,
+    // language,
     urls
 };

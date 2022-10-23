@@ -1,6 +1,6 @@
 import {Navigate, Route, Routes} from "react-router-dom";
 
-import {GenresPage, HomePage, MovieDetailsPage, MoviesListPage, NotFoundPage} from "./pages";
+import {GenresPage, HomePage, MovieDetailsPage, MoviesListPage, MoviesOfGenre, NotFoundPage} from "./pages";
 import {MainLayout} from "./layouts";
 
 function App() {
@@ -14,13 +14,14 @@ function App() {
                         {/*<Route path={':movieId'} element={<MovieDetailsPage/>}/>*/}
                     </Route>
                     <Route path={'movies'} element={<MoviesListPage/>}>
-                        <Route path={':movieId'} element={<MovieDetailsPage/>}/>
-                        {/*<Route path={'page=:pageNumber'} element={<MoviesListPage/>}/>*/}
+                        <Route path={':movieId'} element={<MovieDetailsPage/>}>
+                            {/*<Route path={}*/}
+                        </Route>
                     </Route>
                     <Route path={'genres'} element={<GenresPage/>}>
-                        {/*<Route path={':genreName'} element={<MoviesListPage/>}>*/}
+                        <Route path={':genreName'} element={<MoviesOfGenre/>}>
                         {/*    <Route path={':movieId'} element={<MovieDetailsPage/>}/>*/}
-                        {/*</Route>*/}
+                        </Route>
                     </Route>
                 </Route>
                 <Route path={'*'} element={<NotFoundPage/>}/>
