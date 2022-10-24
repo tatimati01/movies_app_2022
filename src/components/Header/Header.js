@@ -7,10 +7,6 @@ import {UserInfo} from "../UserInfo/UserInfo";
 
 const Header = () => {
 
-    const switchTheme = () => {
-        console.log('theme')
-    }
-
     return (
         <div className={css.header}>
             <div className={css.navbar}>
@@ -26,8 +22,6 @@ const Header = () => {
             <div>
                 <UserInfo/>
             </div>
-
-            <button onClick={switchTheme()}>Light / Dark</button>
         </div>
     );
 };

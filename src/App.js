@@ -13,14 +13,16 @@ function App() {
                     <Route index element={<Navigate to={'home'}/>}/>
                     <Route path={'home'} element={<HomePage/>}>
                         <Route path={':genre'} element={<MoviesOfGenrePage/>}/>
-                        <Route path={':movieId'} element={<MovieDetailsPage/>}/>
+                        <Route path={':movieId'} element={<MovieDetailsPage/>}>
+                            <Route path={':movieId'} element={<MovieDetailsPage/>}/>
+                        </Route>
                     </Route>
                     <Route path={'movies'} element={<MoviesListPage/>}>
-                        <Route path={':movieId'} element={<MovieDetailsPage/>}>
-                        </Route>
+                        <Route path={':movieId'} element={<MovieDetailsPage/>}/>
                     </Route>
                     <Route path={'genres'} element={<GenresPage/>}>
                         <Route path={':genre'} element={<MoviesOfGenrePage/>}>
+                            <Route path={':movieId'} element={<MovieDetailsPage/>}/>
                         </Route>
                     </Route>
                 </Route>
@@ -30,4 +32,8 @@ function App() {
     );
 }
 
-export {App};
+export
+{
+    App
+}
+    ;

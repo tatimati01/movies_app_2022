@@ -1,8 +1,8 @@
 import React from 'react';
 import {useForm} from "react-hook-form";
+import {useNavigate, useSearchParams} from "react-router-dom";
 
 import css from './SearchForm.module.css'
-import {useNavigate, useSearchParams} from "react-router-dom";
 
 
 const SearchForm = () => {

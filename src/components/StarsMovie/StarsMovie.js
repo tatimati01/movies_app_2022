@@ -5,6 +5,7 @@ import css from './StarsMovie.module.css'
 const StarsMovie = () => {
     const [rating, setRating] = useState(0);
     const [hover, setHover] = useState(0);
+
     return (
         <div className={css.starRating}>
             {[...Array(5)].map((star, index) => {

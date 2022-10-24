@@ -1,7 +1,6 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {moviesService} from "../../services";
-import {logDOM} from "@testing-library/react";
 
 
 const initialState = {

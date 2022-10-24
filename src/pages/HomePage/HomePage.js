@@ -1,8 +1,8 @@
 import React from 'react';
+import {Outlet} from "react-router-dom";
 
 import css from '../pages.module.css'
-import {GenresBar, MoviesList, MoviesOfGenre} from "../../components";
-import {Outlet} from "react-router-dom";
+import {GenresBar, MoviesList} from "../../components";
 
 
 const HomePage = () => {
@@ -11,7 +11,6 @@ const HomePage = () => {
         <div className={css.homePageWrapper}>
             <GenresBar/>
             <Outlet/>
-            {/*<MoviesOfGenre/>*/}
             <MoviesList/>
         </div>
     );
