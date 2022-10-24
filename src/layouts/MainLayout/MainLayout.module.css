@@ -1,0 +1,23 @@
+.mainContentDark {
+    border-top: lightblue 2px solid;
+    border-bottom: lightblue 2px solid;
+    padding: 0 40px;
+    background: black;
+    color: lightblue;
+    min-height: 90vh;
+    overflow: hidden;
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+
+.mainContentLight {
+    border-top: #02b9f5 2px solid;
+    border-bottom: #02b9f5 2px solid;
+    padding: 40px;
+    background: lightblue;
+    color: black;
+    min-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}

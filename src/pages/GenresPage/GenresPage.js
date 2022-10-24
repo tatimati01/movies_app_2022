@@ -6,7 +6,6 @@ import {GenresBar} from "../../components";
 const GenresPage = () => {
     return (
         <div>
-            GenresPage
             <GenresBar/>
             <Outlet/>
         </div>

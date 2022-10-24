@@ -95,6 +95,7 @@
 .currentPage {
     margin: auto 10px;
     font-weight: bolder;
+    text-decoration: underline;
 }
 
 .pageNumbers {

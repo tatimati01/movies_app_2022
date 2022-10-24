@@ -8,6 +8,7 @@ body {
     background: black;
     display: flex;
     justify-content: space-between;
+    border-bottom: mediumpurple 2px solid;
 }
 
 .navbar a {
@@ -25,4 +26,12 @@ body {
 .navbar a[class='active'] {
     border-bottom: mediumpurple 2px solid;
     color: mediumpurple;
+}
+
+.appLogo a {
+    /*text-decoration: none;*/
+    /*font-size: x-large;*/
+    /*font-weight: bold;*/
+    color: #03bbf6;
+    /*margin: 10px;*/
 }
