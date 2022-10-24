@@ -20,7 +20,7 @@ const MoviesList = () => {
         <div>
             <div className={css.movieWrapper}>
                 {loading && <h3>Loading...</h3>}
-                {error && <h2>Error</h2>}
+                {error && <h2>{error}</h2>}
                 {movies && movies.map(movie =>
                     <MovieCard key={movie.id} movie={movie}/>
                 )}

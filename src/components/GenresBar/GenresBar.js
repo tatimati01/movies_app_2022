@@ -21,9 +21,9 @@ const GenresBar = () => {
                 {loading && <h3>Loading...</h3>}
                 {error && <h2>Error</h2>}
                 {genres && genres.map(genre =>
-                    <div key={genre.name} genre={genre} className={css.genreStyle}>
-                        <button onClick={()=> navigator(genre.name)}>
-                            <NavLink to={`${genre.name}`} genre={genre}>
+                    <div key={genre.id} className={css.genreStyle}>
+                        <button onClick={()=> navigator(genre.id)}>
+                            <NavLink to={`${genre.name}=${genre.id}`} genre={genre}>
                                 {genre.name}
                             </NavLink>
                         </button>

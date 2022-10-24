@@ -1,11 +1,13 @@
 import {createAsyncThunk, createSlice} from "@reduxjs/toolkit";
 
 import {moviesService} from "../../services";
+import {logDOM} from "@testing-library/react";
 
 
 const initialState = {
     movies: [],
     currentMovie: {},
+    moviesOfGenre: [],
     search: '',
     images: [],
     pageNumber: 1,
@@ -43,7 +45,7 @@ const getMoviesByGenreId = createAsyncThunk(
     async (genreId,{rejectedWithValue}) => {
         try {
             const {data} = await moviesService.getMoviesByGenreId(genreId);
-            return data.results
+            return data
         }catch (e) {
             rejectedWithValue(e.response.data)
         }
@@ -98,7 +100,7 @@ const moviesSlice = createSlice({
                 state.loading = action.payload
             })
             .addCase(getMoviesByGenreId.fulfilled, (state, action) => {
-                state.currentMovie = action.payload
+                state.moviesOfGenre = action.payload
                 state.loading = false
             })
             .addCase(getMoviesByGenreId.rejected, (state, action) => {
