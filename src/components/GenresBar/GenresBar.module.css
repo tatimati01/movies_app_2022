@@ -1,10 +1,7 @@
-
-
 .genresBar {
     border-radius: 10px;
     margin: 10px 40px;
     padding: 10px 60px;
-    /*width: 80%;*/
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -45,19 +42,3 @@
 .genreStyle a[class='active'] {
     color: mediumpurple;
 }
-
-/*.genreInfo {*/
-/*    background: white;*/
-/*    margin: 5px;*/
-/*}*/
-
-/*.outlet {*/
-/*    margin: 20px;*/
-/*}*/
-
-/*.moviesOfGenreWrapper {*/
-/*    display: flex;*/
-/*    flex-wrap: wrap;*/
-/*    gap: 10px;*/
-/*    justify-content: center;*/
-/*}*/

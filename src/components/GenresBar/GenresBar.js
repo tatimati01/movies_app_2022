@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
-import {NavLink, useNavigate, useSearchParams} from "react-router-dom";
+import {NavLink, useNavigate} from "react-router-dom";
+
 import {genresActions} from "../../redux";
 import css from "../GenresBar/GenresBar.module.css";
-import Genre from "../Genre/Genre";
 
 const GenresBar = () => {
     const {genres, error, loading} = useSelector(state => state.genresReducer);

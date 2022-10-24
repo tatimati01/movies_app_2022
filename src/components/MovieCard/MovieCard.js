@@ -3,12 +3,9 @@ import {useNavigate} from "react-router-dom";
 
 import css from './MovieCard.module.css'
 import {imageURL} from "../../configs";
-import {useDispatch} from "react-redux";
 
 const MovieCard = ({movie}) => {
     const {id, original_title, title, overview, backdrop_path} = movie;
-
-    // const dispatch = useDispatch();
 
     const navigator = useNavigate();
 

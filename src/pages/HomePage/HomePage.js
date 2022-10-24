@@ -11,7 +11,7 @@ const HomePage = () => {
         <div className={css.homePageWrapper}>
             <GenresBar/>
             <Outlet/>
-            {/*<MoviesList/>*/}
+            <MoviesList/>
         </div>
     );
 };

@@ -40,10 +40,10 @@
     margin: 5px 0;
 }
 
-.genresListItem p {
-    font-weight: bold;
-    margin: 10px 0;
-}
+/*.genresListItem p {*/
+/*    font-weight: bold;*/
+/*    margin: 10px 0;*/
+/*}*/
 
 .btnDetails {
     display: flex;

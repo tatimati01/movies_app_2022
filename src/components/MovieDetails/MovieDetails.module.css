@@ -1,105 +1,105 @@
-.movieWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
+/*.movieWrapper {*/
+/*    display: flex;*/
+/*    flex-wrap: wrap;*/
+/*    justify-content: center;*/
+/*    gap: 10px;*/
+/*}*/
 
-.movieItem {
-    width: 240px;
-    box-sizing: border-box;
-    height: 360px;
-    border-radius: 20px;
-    background: rgba(173, 216, 230, 0.1);
-    padding: 10px;
-}
+/*.movieItem {*/
+/*    width: 240px;*/
+/*    box-sizing: border-box;*/
+/*    height: 360px;*/
+/*    border-radius: 20px;*/
+/*    background: rgba(173, 216, 230, 0.1);*/
+/*    padding: 10px;*/
+/*}*/
 
-.imageBox {
-    display: flex;
-    justify-content: center;
-    margin-top: 5px;
-}
+/*.imageBox {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    margin-top: 5px;*/
+/*}*/
 
 .imageBox img {
     border-radius: 5px;
 }
 
-.titleBox {
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*.titleBox {*/
+/*    height: 80px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*}*/
 
-.titleBox h3 {
-    color: mediumpurple;
-    text-align: center;
-    margin: 10px;
-}
+/*.titleBox h3 {*/
+/*    color: mediumpurple;*/
+/*    text-align: center;*/
+/*    margin: 10px;*/
+/*}*/
 
-.overviewBox {
-    height: 100px;
-    overflow: hidden;
-}
+/*.overviewBox {*/
+/*    height: 100px;*/
+/*    overflow: hidden;*/
+/*}*/
 
-.overviewBox p {
-    font-size: 14px;
-    margin: 5px 0;
-}
+/*.overviewBox p {*/
+/*    font-size: 14px;*/
+/*    margin: 5px 0;*/
+/*}*/
 
-.genresListItem p {
-    font-weight: bold;
-    margin: 10px 0;
-}
+/*.genresListItem p {*/
+/*    font-weight: bold;*/
+/*    margin: 10px 0;*/
+/*}*/
 
-.btnDetails {
-    display: flex;
-    justify-content: center;
-}
+/*.btnDetails {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*}*/
 
-.btnDetails button {
-    padding: 5px 30px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 5px;
-    background: mediumpurple;
-    font-size: medium;
-    font-weight: bold;
-}
+/*.btnDetails button {*/
+/*    padding: 5px 30px;*/
+/*    margin: 10px 0;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    background: mediumpurple;*/
+/*    font-size: medium;*/
+/*    font-weight: bold;*/
+/*}*/
 
-.btnDetails button > a {
-    text-decoration: none;
-    color: white;
-}
+/*.btnDetails button > a {*/
+/*    text-decoration: none;*/
+/*    color: white;*/
+/*}*/
 
-.prevNextBox {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
+/*.prevNextBox {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    padding: 30px;*/
+/*}*/
 
-.prevNextBox button {
-    border: none;
-    border-radius: 5px;
-    background: rgba(173, 216, 230, 0.6);
-    width: 120px;
-    padding: 10px 0;
-    color: white;
-}
+/*.prevNextBox button {*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    background: rgba(173, 216, 230, 0.6);*/
+/*    width: 120px;*/
+/*    padding: 10px 0;*/
+/*    color: white;*/
+/*}*/
 
-.prevNextBox button:disabled {
-    background: rgba(173, 216, 230, 0.1);
-    color: rgba(255, 255, 255, 0.1);
-}
+/*.prevNextBox button:disabled {*/
+/*    background: rgba(173, 216, 230, 0.1);*/
+/*    color: rgba(255, 255, 255, 0.1);*/
+/*}*/
 
-.currentPage {
-    margin: auto 10px;
-    font-weight: bolder;
-}
+/*.currentPage {*/
+/*    margin: auto 10px;*/
+/*    font-weight: bolder;*/
+/*}*/
 
-.pageNumbers {
-    margin: auto 10px;
-}
+/*.pageNumbers {*/
+/*    margin: auto 10px;*/
+/*}*/
 
 .movieInfoPage {
     display: flex;
@@ -112,8 +112,6 @@
 }
 
 .movieInfoBox {
-    /*display: flex;*/
-    /*justify-content: center;*/
     padding: 10px;
 }
 
@@ -131,20 +129,20 @@
     text-indent: 30px;
 }
 
-.starRating button {
-    background-color: transparent;
-    border: none;
-    outline: none;
-    cursor: pointer;
-}
-.starRatingOn {
-    color: mediumpurple;
-}
-.starRatingOff {
-    color: lightblue;
-}
+/*.starRating button {*/
+/*    background-color: transparent;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    cursor: pointer;*/
+/*}*/
+/*.starRatingOn {*/
+/*    color: mediumpurple;*/
+/*}*/
+/*.starRatingOff {*/
+/*    color: lightblue;*/
+/*}*/
 
-.star {
-    font-size: x-large;
-}
+/*.star {*/
+/*    font-size: x-large;*/
+/*}*/
 
